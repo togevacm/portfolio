@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# Summer School slide decks (build-along + output PDFs) — not published
+*.pdf
+pdf/
+pdfs/

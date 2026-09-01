@@ -1,0 +1,558 @@
+/* My portfolio - Summer School 2026
+   Togeva purple #750065   amber #FCA311   LTC green #1D553A
+   Only one layout tool in this file: flexbox. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  color: #1a1716;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #750065;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto; /* centred */
+  padding: 0 40px;
+}
+
+.section {
+  padding-top: 90px;
+}
+
+.eyebrow {
+  color: #fd8301;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.eyebrow-purple {
+  color: #750065;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 8px 0 28px;
+}
+
+.muted {
+  color: #3a3946;
+}
+
+/* ---------- 1. header ---------- */
+
+.site-header {
+  position: sticky; /* stays on screen when you scroll */
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #dfe0e6;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes the menu to the right */
+  padding: 18px 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1a1716;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #750065;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.brand-role {
+  font-size: 12px;
+  color: #3a3946;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  font-weight: 500;
+  color: #3a3946;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #750065;
+}
+
+.btn {
+  background: #750065;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 999px;
+}
+
+.nav .btn {
+  color: #ffffff;
+}
+
+.btn-outline {
+  border: 2px solid #750065;
+  color: #750065;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* ---------- 2. hero ---------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-top: 80px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  background: #fff8ea;
+  color: #fd8301;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 24px 0 16px;
+}
+
+.role {
+  font-size: 22px;
+  font-weight: 600;
+  color: #750065;
+}
+
+.hero-copy {
+  color: #3a3946;
+  max-width: 44ch;
+  margin-top: 16px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+/* the cream circle hides behind the photo */
+.hero-photo-box {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  flex-shrink: 0;
+}
+
+.hero-photo-box::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: -26px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: #fff8ea;
+}
+
+.hero-photo {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ---------- 3. about ---------- */
+
+.about-row {
+  display: flex;
+  gap: 24px;
+}
+
+.card-grey {
+  flex: 2;
+  background: #f5f6f8;
+  border-radius: 10px;
+  padding: 32px 36px;
+  font-size: 17px;
+  color: #3a3946;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.facts {
+  flex: 1;
+  list-style: none;
+  background: #eee8fa;
+  border-radius: 10px;
+  padding: 18px 32px;
+}
+
+.facts li {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  font-weight: 600;
+  color: #420039;
+  border-bottom: 1px solid rgba(66, 0, 57, 0.12);
+}
+
+.facts li:last-child {
+  border-bottom: none;
+}
+
+.facts span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #3a3946;
+}
+
+/* ---------- 4. skills ---------- */
+
+.skills-row {
+  display: flex;
+  gap: 24px;
+}
+
+.skill {
+  flex: 1;
+  border: 1px solid #dfe0e6;
+  border-radius: 10px;
+  padding: 24px 26px 28px;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #eee8fa;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.skill h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 15px;
+  color: #3a3946;
+}
+
+.skill:hover {
+  border-color: #750065;
+}
+
+/* ---------- 5. projects ---------- */
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.section-meta {
+  font-size: 14px;
+  color: #3a3946;
+  margin-bottom: 30px;
+}
+
+.projects-row {
+  display: flex;
+  gap: 24px;
+}
+
+.project {
+  flex: 1;
+  border: 1px solid #dfe0e6;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.project h3 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag {
+  background: #fff8ea;
+  color: #fd8301;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.project p {
+  font-size: 15px;
+  color: #3a3946;
+}
+
+.project-link {
+  font-weight: 600;
+  margin-top: auto; /* pushes the link to the bottom */
+}
+
+/* ---------- 6. interests ---------- */
+
+.interests {
+  background: #e6f4f6;
+  border-radius: 10px;
+  padding: 44px 48px;
+  text-align: center;
+}
+
+.interests h2 {
+  margin-bottom: 24px;
+}
+
+.pills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* a new line when the row is full */
+  gap: 14px;
+  justify-content: center;
+}
+
+.pills li {
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ---------- 7. contact ---------- */
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  background: #750065;
+  border-radius: 10px;
+  padding: 64px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+/* two big circles just for decoration */
+.contact::before,
+.contact::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact::before {
+  width: 320px;
+  height: 320px;
+  right: -60px;
+  top: -120px;
+}
+
+.contact::after {
+  width: 260px;
+  height: 260px;
+  right: 140px;
+  bottom: -150px;
+}
+
+.contact div {
+  position: relative;
+}
+
+.contact-title {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 0;
+}
+
+.contact p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+  max-width: 42ch;
+  margin-top: 16px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.btn-light {
+  background: #ffffff;
+  color: #750065;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-align: center;
+  min-width: 174px;
+}
+
+/* ---------- 8. footer ---------- */
+
+.site-footer {
+  border-top: 1px solid #dfe0e6;
+  margin-top: 90px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 30px 40px;
+  font-size: 15px;
+  color: #3a3946;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-divider {
+  width: 1px;
+  height: 34px;
+  background: #dfe0e6;
+}
+
+.footer-lines {
+  display: flex;
+  flex-direction: column;
+}
+
+.togeva-logo {
+  height: 32px;
+}
+
+.ltc-logo {
+  height: 34px;
+}
+
+/* ---------- phones and tablets ---------- */
+
+@media (max-width: 900px) {
+  .header-row,
+  .footer-row {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .about-row,
+  .skills-row,
+  .projects-row,
+  .contact,
+  .section-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-meta {
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    padding: 40px 32px;
+  }
+}
