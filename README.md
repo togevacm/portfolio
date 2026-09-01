@@ -1,9 +1,26 @@
-# Portfolio — Saah Naomi
+<div align="center">
 
-A one-page personal portfolio built with **HTML and CSS only**, during the
-Togeva & LTC Summer School 2026 (Week 3, Project 1).
+<h1 align="center">Saah Naomi</h1>
 
-**Live site:** https://togevacm.github.io/portfolio/
+<p align="center"><strong>A one-page personal portfolio, built with HTML and CSS only.</strong></p>
+
+<p align="center">
+  Who she is &nbsp;&middot;&nbsp; what she can do &nbsp;&middot;&nbsp; what she has built
+  <br />
+  the things she loves &nbsp;&middot;&nbsp; and how to reach her
+</p>
+
+<p align="center"><a href="https://togevacm.github.io/portfolio/"><img height="28" alt="View the live site" src="https://img.shields.io/badge/Live_site-togevacm.github.io%2Fportfolio-750065?style=for-the-badge&labelColor=420039" /></a></p>
+
+<p align="center"><img height="20" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />&nbsp;<img height="20" alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />&nbsp;<img height="20" alt="Flexbox only" src="https://img.shields.io/badge/Layout-Flexbox_only-750065?style=flat-square" />&nbsp;<img height="20" alt="No JavaScript" src="https://img.shields.io/badge/JavaScript-0_lines-FCA311?style=flat-square" />&nbsp;<img height="20" alt="Urbanist" src="https://img.shields.io/badge/Type-Urbanist-420039?style=flat-square&logo=googlefonts&logoColor=white" />&nbsp;<img height="20" alt="8 blocks" src="https://img.shields.io/badge/Blocks-8-1D553A?style=flat-square" />&nbsp;<img height="20" alt="Hosted on GitHub Pages" src="https://img.shields.io/badge/GitHub_Pages-live-222222?style=flat-square&logo=github&logoColor=white" />&nbsp;<img height="20" alt="Summer School 2026, Project 1" src="https://img.shields.io/badge/Summer_School_2026-Project_1-FD8301?style=flat-square" /></p>
+
+<br />
+
+<p align="center"><a href="https://togevacm.github.io/portfolio/"><img src="docs/hero.png" width="900" alt="The portfolio landing page: the header, the hello, and the round photo on its cream circle" /></a></p>
+
+<p align="center"><em><a href="https://togevacm.github.io/portfolio/">Open the live site</a> to see the whole page.</em></p>
+
+</div>
 
 ---
 
@@ -53,6 +70,8 @@ Cards use `border-radius: 10px`. Anything pill-shaped uses `border-radius: 999px
 ```
 portfolio/
 ├── index.html              the whole page
+├── docs/
+│   └── hero.png            the screenshot at the top of this README
 ├── style.css               all of the styling
 ├── naomi.png               hero photo
 ├── dino game.png           project screenshot
